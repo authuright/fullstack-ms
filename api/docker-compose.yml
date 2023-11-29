@@ -1,0 +1,28 @@
+version: "3.11"
+
+services:
+  apiserver:
+    restart: always
+    container_name: apiserver
+    image: authuright/flask_live_app:1.0.0
+    build: .
+    ports:
+      - "4000:4000"
+    environment:
+      - DB_URL=postgresql://postgres:postgres@apidb:5432/poukdb
+    depends_on:
+      - apidb
+  apidb:
+    container_name: apidb
+    image: postgres:12
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=poukdb
+    volumes:
+      - pgdata:/var/lib/postgres/data
+volumes:
+  pgdata: {}

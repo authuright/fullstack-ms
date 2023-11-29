@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300&family=Ubuntu:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+* {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+span.sub_title {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 20px;
+  display: block;
+}
+.title {
+  font-size: 45px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.login-wrap {
+  position: relative;
+  background-color: #0c94e8;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+}
+.box-login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 50px;
+  background-color: #ebf1f5;
+}
+
+/* .form-control-cls input {
+    display: block;
+    padding: 7px 15px;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 0;
+} */
+
+.form-control-cls input:focus,
+.form-control-cls input:active {
+  border: none;
+}
+.control-form {
+  width: 420px;
+  margin: auto;
+}
+.form-control-cls button {
+  width: 100%;
+  background-color: rgb(19, 202, 141);
+  padding: 10px 20px;
+  border: 0;
+  font-size: 16px;
+  color: #ebf1f5;
+  cursor: pointer;
+}
+
+.form-control-cls input[type="text"],
+.form-control-cls input[type="password"] {
+  border: 2px solid #cdcdcd;
+  display: block;
+  font-size: 20px;
+  height: auto;
+  margin-bottom: 15px;
+  padding: 11px 10px;
+  width: 100%;
+  outline: none;
+}
+span.space {
+  height: 10px;
+  display: block;
+}
+
+.section-forget-pass {
+  font-size: 14px;
+  margin: 10px 0;
+}
+.section-forget-pass a {
+  text-decoration: none;
+}
+
+.section-control-language select {
+  width: 100%;
+  padding: 6px 2px;
+  outline: none;
+  border: 2px solid #cdcdcd;
+}
